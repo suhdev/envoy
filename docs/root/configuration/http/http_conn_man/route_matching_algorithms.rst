@@ -292,6 +292,24 @@ Best Practices
    to validate your configuration
 5. **Monitor Performance**: Watch for high CPU usage from regex matching in production
 
+Interactive Demo
+~~~~~~~~~~~~~~~~
+
+A Python demonstration script is available at
+``docs/root/configuration/http/http_conn_man/route_matching_demo.py`` that simulates
+how Envoy routes requests. Run it to see examples of different matching types in action:
+
+.. code-block:: bash
+
+   python3 docs/root/configuration/http/http_conn_man/route_matching_demo.py
+
+The demo shows:
+
+- How routes are evaluated in order
+- Which route matches different request paths
+- The importance of route ordering
+- Common regex patterns for typical use cases
+
 Security Considerations
 -----------------------
 
@@ -329,4 +347,19 @@ Related Documentation
 - :ref:`Route configuration <envoy_v3_api_msg_config.route.v3.Route>`
 - :ref:`RouteMatch API <envoy_v3_api_msg_config.route.v3.RouteMatch>`
 - :ref:`Router filter <config_http_filters_router>`
+
+Example Configurations
+~~~~~~~~~~~~~~~~~~~~~~
+
+A complete example configuration file demonstrating various path matching types is available at
+``docs/root/configuration/http/http_conn_man/route_matching_examples.yaml``. This file includes:
+
+- Regex matching for versioned API endpoints
+- Prefix and exact path matching
+- Case-insensitive matching
+- Query parameter matching combined with regex
+- Complex regex patterns (dates, UUIDs, language codes)
+- Header-based matching
+
+You can use this as a reference when configuring your own routes.
 
