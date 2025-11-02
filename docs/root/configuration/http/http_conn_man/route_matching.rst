@@ -18,3 +18,6 @@ When Envoy matches a route, it uses the following procedure:
 #. Independently, each :ref:`virtual cluster <envoy_v3_api_msg_config.route.v3.VirtualCluster>` in the
    virtual host is checked, *in order*. If there is a match, the virtual cluster is used and no
    further virtual cluster checks are made.
+
+For detailed information about path matching algorithms, including regex-based matching, prefix matching,
+and exact matching, see :ref:`Route Matching Algorithms <config_http_conn_man_route_matching_algorithms>`.
