@@ -200,7 +200,7 @@ def demonstrate_regex_patterns():
          ["/archive/2024-01-15", "/archive/2023-12-31"],
          ["/archive/2024-1-15", "/archive/24-01-15"]),
         
-        (r'^/resource/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$', 
+        (r'^/resource/[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$', 
          "UUID paths",
          ["/resource/550e8400-e29b-41d4-a716-446655440000"],
          ["/resource/invalid-uuid", "/resource/123"]),

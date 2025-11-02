@@ -288,7 +288,7 @@ Best Practices
 1. **Prefer Simple Matches**: Use prefix or exact matching when possible for better performance
 2. **Order Routes Carefully**: Place specific routes before general routes
 3. **Optimize Regex Patterns**: Use anchors (``^`` and ``$``) and avoid complex backtracking patterns
-4. **Test Route Configuration**: Use the :ref:`route table check tool <config_operations_tools_route_table_check_tool>`
+4. **Test Route Configuration**: Use the :ref:`route table check tool <install_tools_route_table_check_tool>`
    to validate your configuration
 5. **Monitor Performance**: Watch for high CPU usage from regex matching in production
 

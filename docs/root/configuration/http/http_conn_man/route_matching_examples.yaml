@@ -129,7 +129,7 @@ static_resources:
                 # Matches /resource/550e8400-e29b-41d4-a716-446655440000
                 - match:
                     safe_regex:
-                      regex: "^/resource/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+                      regex: "^/resource/[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
                   route:
                     cluster: resource_cluster
                 
